@@ -11,7 +11,7 @@
 	</parent>
 	
 	<groupId>de.cepesoft.playground</groupId>
-	<artifactId>helloworld</artifactId>
+	<artifactId>hello-world</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>helloworld</name>
@@ -26,6 +26,9 @@
 			<id>github</id>
 			<name>GitHub Apache Maven Packages</name>
 			<url>https://maven.pkg.github.com/cschwich/hello-world</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 	</distributionManagement>
 	
