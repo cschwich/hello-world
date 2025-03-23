@@ -36,8 +36,9 @@ jobs:
       - name: Notify server
         if: ${{ env.DEPLOY == 'true' }}
         run: |
-          curl -L -s -S \
+          curl -L -f -s -S \
             -H 'Content-Type: application/json' \
             -H 'Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}' \
             -d '{"application":"${{ github.repository }}","environment":"${{ env.ENVIRONMENT }}","release":"${{ env.VERSION }}"}' \
             -X POST '${{ secrets.WEBHOOK_URL }}'
+        continue-on-error: true
