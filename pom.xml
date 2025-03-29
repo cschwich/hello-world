@@ -12,7 +12,7 @@
 	
 	<groupId>de.cepesoft.playground</groupId>
 	<artifactId>hello-world</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>helloworld</name>
 	<description>Demo project for Spring Boot</description>
